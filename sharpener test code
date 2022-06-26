@@ -1,0 +1,62 @@
+<IDOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <style>
+            form{
+                background-color: orange;
+                text-align: center;
+
+            }
+            input{
+                font-size: 25px;
+                color:black;
+                width:1000px;
+            }
+            
+
+         </style>
+         
+         
+         <h1 style="text-align: center; margin-top: 50px;"> Book a call </h1><br>
+         <h5 styles="text-align: center;">Book a call and fix appointment</h5>
+         <body>
+            <form action="#" onsubmit="onsignup(event)">
+                <label>Name</label>
+                <br/>
+                <input type ="text" name="username" required/>
+                <br/>
+                <label>Email</label>
+                <br/>
+                <input type="email" name="email" required/>
+                <br/>
+                <label>Password</label>
+                <br/>
+                <input type ="password" name="password" required/>
+                <br/>
+                <label>Phone number</label>
+                <br/>
+                <input type="number" name="number" required/>
+                <br/>
+                <label>Date</label>
+                <input type="date" name="date from" required/>
+                <input type="date" name="date to" required/>
+                <br/>
+                <button> Get a Call </button>
+                <br/>
+            </form>
+            <script>
+            let btn = document.querySelector('.btn');
+            btn.addEventListener('click', (e)=>{
+                e.preventDefault();
+                document.queryselector('my-form').style.background='#ccc';
+            }
+            )
+        
+
+            </script>
+
+         </body>
