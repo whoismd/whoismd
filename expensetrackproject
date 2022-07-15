@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+<body>
+    <header>
+        <h1 class="title"></h1>
+    </header>
+
+    <section class="content">
+        <h3 class="second-title">Add a new item: </h3>
+        <div class="form">
+            <form id="exp-Form">
+                <div class="form-line left">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="Movie">Movie</option>
+                        <option value="Fuel">Fuel</option>
+                        <option value="Miscallaneous">Miscallaneous</option>
+                        <option value="Food">Food</option>
+                    </select>
+                </div>
+                <div class="form-line right">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="form-line left">
+                    <span for="date">Date:</span>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-line right">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="button-save">Add a new expense</button>
+            </form>
+        </div>
+    </section>
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+                <tr>
+                
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
