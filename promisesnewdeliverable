@@ -1,0 +1,70 @@
+function createPost (post) { return new Promise((resolve, reject) => { setTimeout(() = {
+posts.push(post);
+const error = true;
+if (!error) {
+resolve();
+} else {
+reject('Error: Something went wrong');
+}
+}, 2000);
+});
+}
+
+2.
+
+
+function removeItem(arr, value) {
+  var index = arr.indexOf(value);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+
+
+3.
+
+
+for(let i = 0; i<5; i++){
+  var elem = document.createElement("div");               
+  elem.innerText = "Text " + i;
+  elem.className = "added";
+  document.body.appendChild(elem); 
+}
+
+setTimeout(function(){
+  var allDivs = document.getElementsByClassName("added");
+  var lastDiv = allDivs.length-1;
+  document.body.removeChild(allDivs[lastDiv]);
+}, 3000);
+
+
+
+
+
+
+
+
+Promise.all
+
+1.
+
+const promise1 = Promise.resolve('Hello World');
+const promise2 10; =
+const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 2000, 'Goodbye')
+);
+const promise4 = fetch('')
+Promise.all( [promise1, promise2, promise3]).then(values 
+=>console.log(values));
+
+
+2.
+userupdatesapost(){
+
+Promise.all([createPost, updatelas tactivitytime]) .then(([createPostresolves, update lastactivitytime resolves]) => { console.log(update lastactivitytime resolves)
+
+}) .catch(err=> console.log(err))
+
+okay so
+
+I
