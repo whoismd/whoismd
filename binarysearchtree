@@ -1,0 +1,49 @@
+class BST{
+
+constructor(){
+
+this.root = null
+
+insert(value){
+
+const newNode = new Node(value)
+
+if(!this.root){ this.root = newNode
+
+return this
+
+}
+
+}
+
+search(node, data)
+{
+
+	if(node === null)
+		return null;
+
+
+	else if(data < node.data)
+		return this.search(node.left, data);
+
+
+	else if(data > node.data)
+		return this.search(node.right, data);
+
+	else
+		return node;
+}
+
+class Node{
+
+constructor(value) {
+
+this.value = value this.left = null
+
+this.right = null
+
+}
+
+}
+
+const tree = new BST()
